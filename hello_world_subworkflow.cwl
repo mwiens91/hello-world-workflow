@@ -14,8 +14,27 @@ outputs:
     outputSource: make_file_caps/output_files
 
 steps:
-  output_hello_world:
+  hello_world:
+    run: steps/hello_world.cwl
+    in:
+      script_file: hello_world_script_file
+      name: name
+      number: number
+    out:
+      [hello_world_output_file]
 
   duplicate_file:
+    run: steps/duplicate_file.cwl
+    in:
+      script_file: duplicator_script_file
+      input_file: hello_world/hello_world_output_file
+    out:
+      [duplicate_files]
 
-  make_file_caps:
+  make_caps:
+    run: steps/make_caps.cwl
+    in:
+      script_file: make_caps_script_file
+      input_file: duplicate_file/duplicate_files
+    out:
+      [output_files]

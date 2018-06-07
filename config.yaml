@@ -1,6 +1,6 @@
 hello_world_script:
   class: File
-  path: path/here
+  path: scripts/helloworld.sh
 duplicator_script:
   class: File
   path: path/here

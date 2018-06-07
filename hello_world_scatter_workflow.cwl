@@ -21,7 +21,7 @@ outputs:
 
 steps:
   scatter_hello_world:
-    run: steps/hello_world.cwl
+    run: hello_world_subworkflow.cwl
     in:
       hello_world_script_file: hello_world_script
       duplicator_script_file: duplicator_script
