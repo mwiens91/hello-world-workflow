@@ -11,7 +11,7 @@ inputs:
 outputs:
   final_outputs:
     type: File[]
-    outputSource: make_file_caps/output_files
+    outputSource: make_caps/output_files
 
 steps:
   hello_world:
