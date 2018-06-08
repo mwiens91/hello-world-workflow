@@ -9,9 +9,9 @@ inputs:
   number: int
 
 outputs:
-  final_outputs:
-    type: File[]
-    outputSource: make_caps/output_files
+  final_output_directory:
+    type: Directory
+    outputSource: make_caps/final_output_directory
 
 steps:
   hello_world:
@@ -37,4 +37,4 @@ steps:
       script_file: make_caps_script_file
       input_file: duplicate_file/duplicate_files
     out:
-      [output_files]
+      [final_output_directory]

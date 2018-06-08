@@ -16,7 +16,7 @@ inputs:
       position: 2
 
 outputs:
-  output_files:
-    type: File[]
+  final_output_directory:
+    type: Directory
     outputBinding:
-      glob: "shout_*"
+      glob: "shout*"
