@@ -26,8 +26,8 @@ steps:
       hello_world_script_file: hello_world_script
       duplicator_script_file: duplicator_script
       make_caps_script_file: make_caps_script
-      name: name
-      number: number
+      name: names
+      number: numbers
     out:
       [final_outputs]
     scatter: [name, number]
