@@ -26,9 +26,9 @@ steps:
       hello_world_script_file: hello_world_script
       duplicator_script_file: duplicator_script
       make_caps_script_file: make_caps_script
-      number: numbers
-      name: names
+      number: number
+      name: name
     out:
       [final_outputs]
-    scatter: [number, names]
+    scatter: [name, number]
     scatterMethod: flat_crossproduct
