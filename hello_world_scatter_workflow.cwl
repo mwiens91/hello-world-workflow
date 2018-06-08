@@ -4,8 +4,8 @@ cwlVersion: v1.0
 class: Workflow
 
 requirements:
-  - class: ScatterFeatureRequrement
-  - class: SubworkflowFeature
+  - class: ScatterFeatureRequirement
+  - class: SubworkflowFeatureRequirement
 
 inputs:
   hello_world_script: File
