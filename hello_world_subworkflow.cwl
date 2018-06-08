@@ -35,6 +35,8 @@ steps:
     run: steps/make_caps.cwl
     in:
       script_file: make_caps_script_file
-      input_file: duplicate_file/duplicate_files
+      input_files: duplicate_file/duplicate_files
+      name: name
+      number: number
     out:
       [final_output_directory]

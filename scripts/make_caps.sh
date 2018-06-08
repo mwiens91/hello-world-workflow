@@ -1,9 +1,14 @@
 #!/usr/bin/env sh
 
-mkdir shout
+# Make the directory name
+dirname=shout_$1_$2
+mkdir $dirname
+shift
+shift
 
+# Start shouting
 for var in "$@"
 do
     filename=`echo $var | sed "s/.*\///"`
-    cat $var | awk '{print toupper($0)}' > shout/shout_$filename
+    cat $var | awk '{print toupper($0)}' > $dirname/shout_$filename
 done
