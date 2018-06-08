@@ -11,8 +11,8 @@ inputs:
   hello_world_script: File
   duplicator_script: File
   make_caps_script: File
-  numbers: int[]
   names: string[]
+  numbers: int[]
 
 outputs:
   hello_world_outputs:
@@ -26,8 +26,8 @@ steps:
       hello_world_script_file: hello_world_script
       duplicator_script_file: duplicator_script
       make_caps_script_file: make_caps_script
-      number: number
       name: name
+      number: number
     out:
       [final_outputs]
     scatter: [name, number]
