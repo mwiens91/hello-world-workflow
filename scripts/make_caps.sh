@@ -2,5 +2,6 @@
 
 for var in "$@"
 do
-    cat $var | awk '{print toupper($0)}' > shout_$var
+    filename=`echo $var | sed "s/.*\///"`
+    cat $var | awk '{print toupper($0)}' > shout_$filename
 done
