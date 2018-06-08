@@ -3,10 +3,10 @@ hello_world_script:
   path: scripts/helloworld.sh
 duplicator_script:
   class: File
-  path: path/here
+  path: scripts/duplicate_file.sh
 make_caps_script:
   class: File
-  path: path/here
+  path: scripts/make_caps.sh
 names:
   - Jamie
   - Jameson
