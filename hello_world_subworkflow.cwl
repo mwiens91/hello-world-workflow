@@ -33,6 +33,8 @@ steps:
     run: steps/duplicate_file.cwl
     in:
       script_file: duplicator_script_file
+      name: name
+      number: number
       input_file: hello_world/hello_world_output_file
     out:
       [duplicate_files]

@@ -24,4 +24,4 @@ outputs:
   hello_world_output_file:
     type: File
     outputBinding:
-      glob: helloworld.txt
+      glob: helloworld*.txt
