@@ -4,8 +4,7 @@ class: CommandLineTool
 baseCommand: sh
 
 # There's absolutely no reason to pull this Docker image aside from
-# testing that such a step works (the 'alpine' image happened to be
-# small').
+# testing that such a step works
 hints:
   DockerRequirement:
     dockerPull: node:slim
