@@ -9,6 +9,12 @@ inputs:
   number: int
 
 outputs:
+  hello_world_output_file:
+    type: File
+    outputSource: hello_world/hello_world_output_file
+  duplicate_files:
+    type: File[]
+    outputSource: duplicate_file/duplicate_files
   final_outputs_tar:
     type: File
     outputSource: make_caps/final_outputs_tar

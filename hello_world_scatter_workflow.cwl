@@ -29,6 +29,6 @@ steps:
       name: names
       number: numbers
     out:
-      [final_outputs_tar]
+      [hello_world_output_file, duplicate_files, final_outputs_tar]
     scatter: [name, number]
     scatterMethod: flat_crossproduct
