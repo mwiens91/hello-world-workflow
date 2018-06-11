@@ -12,3 +12,6 @@ do
     filename=`echo $var | sed "s/.*\///"`
     cat $var | awk '{print toupper($0)}' > $dirname/shout_$filename
 done
+
+# Zip it
+tar -zcf $dirname.tar.gz $dirname/

@@ -51,8 +51,8 @@ workflow for testing purposes.
 ### make_caps
 
 The make_caps step takes the files from duplicate_file and converts all
-their alphabetic characters to uppercase and creates a new directory
-with these converted files.
+their alphabetic characters to uppercase and creates a tarball with
+these converted files.
 
-By default the final output directories created by make_caps should
-appear in the base directory of the repository.
+By default the final output tarballs created by make_caps should appear
+in the base directory of the repository.

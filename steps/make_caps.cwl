@@ -26,7 +26,7 @@ inputs:
       position: 4
 
 outputs:
-  final_output_directory:
-    type: Directory
+  final_outputs_tar:
+    type: File
     outputBinding:
-      glob: "shout*"
+      glob: "shout*tar.gz"

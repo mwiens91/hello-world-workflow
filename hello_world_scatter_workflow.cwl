@@ -16,8 +16,8 @@ inputs:
 
 outputs:
   hello_world_outputs:
-    type: Directory[]
-    outputSource: scatter_hello_world/final_output_directory
+    type: File[]
+    outputSource: scatter_hello_world/final_outputs_tar
 
 steps:
   scatter_hello_world:
@@ -29,6 +29,6 @@ steps:
       name: names
       number: numbers
     out:
-      [final_output_directory]
+      [final_outputs_tar]
     scatter: [name, number]
     scatterMethod: flat_crossproduct

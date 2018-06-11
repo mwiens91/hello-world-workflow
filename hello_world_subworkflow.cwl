@@ -9,9 +9,9 @@ inputs:
   number: int
 
 outputs:
-  final_output_directory:
-    type: Directory
-    outputSource: make_caps/final_output_directory
+  final_outputs_tar:
+    type: File
+    outputSource: make_caps/final_outputs_tar
 
 steps:
   hello_world:
@@ -39,4 +39,4 @@ steps:
       name: name
       number: number
     out:
-      [final_output_directory]
+      [final_outputs_tar]
