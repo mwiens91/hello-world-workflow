@@ -38,21 +38,21 @@ the following steps:
 
 ### hello_world
 
-The hello_world step takes a name and number and prints a unique "hello
-world" message to a file.
+The [hello_world step](steps/hello_world.cwl) takes a name and number
+and prints a unique "hello world" message to a file.
 
 ### duplicate_file
 
-The duplicate_file step takes the file from hello_world and duplicates
-it into two separate files. This step is (needlessly) run in the
-`node:slim` Docker container, to incorporate the Docker feature into the
-workflow for testing purposes.
+The [duplicate_file step](steps/duplicate_file.cwl) takes the file from
+hello_world and duplicates it into two separate files. This step is
+(needlessly) run in the `node:slim` Docker container, to incorporate the
+Docker feature into the workflow for testing purposes.
 
 ### make_caps
 
-The make_caps step takes the files from duplicate_file and converts all
-their alphabetic characters to uppercase and creates a tarball with
-these converted files.
+The [make_caps step](steps/make_caps.cwl) takes the files from
+duplicate_file and converts all their alphabetic characters to uppercase
+and creates a tarball with these converted files.
 
 By default the final output tarballs created by make_caps should appear
 in the base directory of the repository.
